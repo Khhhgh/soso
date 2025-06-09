@@ -42,7 +42,7 @@ def short(url):
 @bot.message_handler(commands = ["start"])
 def start(message):
    id = message.from_user.id
-   with open('users.txt','r') as f3:
+   with open('users.txt','a') as f3:
     f3.write(f'{id}\n')
     channel = "" # Your channel username without @
     
