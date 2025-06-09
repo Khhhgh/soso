@@ -44,7 +44,7 @@ def start(message):
    id = message.from_user.id
    with open('users.txt','a') as f3:
     f3.write(f'{id}\n')
-    channel = "A_S_4A" # Your channel username without @
+    channel = "" # Your channel username without @
     
     a = message.from_user.first_name
     b = message.from_user.username
@@ -65,7 +65,12 @@ def start(message):
        return bot.send_message(message.chat.id,f'''<strong>- ⌔︙عليك الاشتراك في قناة البوت لأستخدام الاوامر
 -» اشترك في القناة @{channel} .
 -» ثم ارسل /start ✅ </strong>''',reply_markup=z,parse_mode='html')
-       @bot.message_handler(commands = ["TIKTOK"])
+
+      
+      bot.send_photo(message.chat.id,pg)
+      bot.send_message(message.chat.id,f"اهلا\tبك\tلبدأ\tالتحميل\tاضغط\n/TIKTOK") 
+     
+@bot.message_handler(commands = ["TIKTOK"])
 def s1(message):
     mj=bot.send_message(message.chat.id,"""  
 * -  بوت تحميل من التيك توك . 
@@ -79,13 +84,8 @@ def ag(message):
  global us,ti
  url = message.text
  try:
-      
-      bot.send_photo(message.chat.id,pg)
-      bot.send_message(message.chat.id,f"اهلا\tبك\tلبدأ\tالتحميل\tاضغط\n/TIKTOK") 
-     
   request = get(f"https://www.tikwm.com/api/?url={url}").json()
-  video =
-request["data"]["play"]
+  video = request["data"]["play"]
   bot.send_video(message.chat.id,video,caption="- تم تحميل الفيديو\nرابط بوت التحميل : @TOM6Y7BOT . ")
  except:
   bot.send_message(message.chat.id,f"-  الرابط غير صالح ❌ . ")
