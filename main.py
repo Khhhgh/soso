@@ -31,7 +31,7 @@ def id_file1(id):
    all = True
  file.close()
  return all
-pg = "https://t.me/mokjjbv/46" 
+pg = "https://t.me/mokjjbv/48" 
 ti=0
 users = []
 token = "6477545499:AAFurq6jQ1J5BuYeV3xdEdKSwnIU3HsZUzE"
@@ -44,7 +44,7 @@ def start(message):
    id = message.from_user.id
    with open('users.txt','a') as f3:
     f3.write(f'{id}\n')
-    channel = "A_S_4A" # Your channel username without @
+    channel = "" # Your channel username without @
     
     a = message.from_user.first_name
     b = message.from_user.username
@@ -71,16 +71,16 @@ def start(message):
       bot.send_message(message.chat.id,f"اهلا\tبك\tلبدأ\tالتحميل\tاضغط\n/TIKTOK") 
      
 @bot.message_handler(commands = ["TIKTOK"])
-def s1(message):
-    mj=bot.send_message(message.chat.id,"""  
+def s1(messag
+def ag(message):
+     mj=bot.send_message(message.chat.id,"""  
 * -  بوت تحميل من التيك توك . 
 - لتحميل فديو وصور ارسل رابط المنشور 
 - التحميل بدون علامة مائية او اي حقوق اخرى. 
 --------------------------------------
-                                          *
+@T_4IJ - @T_4IJ                                          *
 """,parse_mode = "markdown")
     bot.register_next_step_handler(mj,ag)
-def ag(message):
  global us,ti
  url = message.text
  try:
