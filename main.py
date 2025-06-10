@@ -77,7 +77,7 @@ def s1(message):
 - لتحميل فديو وصور ارسل رابط المنشور 
 - التحميل بدون علامة مائية او اي حقوق اخرى. 
 --------------------------------------
-@T_4IJ - @T_4IJ                                          *
+ -                                           *
 """,parse_mode = "markdown")
     bot.register_next_step_handler(mj,ag)
 def ag(message):
