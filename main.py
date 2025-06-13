@@ -68,9 +68,9 @@ def start(message):
 
       
       bot.send_photo(message.chat.id,pg)
-      bot.send_message(message.chat.id,f"اهلا\tبك\tلبدأ\tالتحميل\tاضغط\n/TIKTOK") 
+      bot.send_message(message.chat.id,f"اهلا\tبك\tلبدأ\tالتحميل\tاضغط\n/tiktok") 
      
-@bot.message_handler(commands = ["TIKTOK"])
+@bot.message_handler(commands = ["tiktok"])
 def s1(message):
     mj=bot.send_message(message.chat.id,"""  
 * -  بوت تحميل من التيك توك . 
