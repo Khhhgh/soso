@@ -34,7 +34,7 @@ def id_file1(id):
 pg = "https://t.me/mokjjbv/48" 
 ti=0
 users = []
-token = "6477545499:AAFurq6jQ1J5BuYeV3xdEdKSwnIU3HsZUzE"
+token = "6477545499:AAHkCgwT5Sn1otiMst_sAOmoAp_QC1_ILzA"
 print('- اذهب للبوت واضغط \n /start')
 bot = telebot.TeleBot(token) 
 def short(url):
